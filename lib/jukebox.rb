@@ -21,7 +21,7 @@ def help
 end
 
 def list(songs_array)
-  songs_array.each{ |song|
+  songs_array.each_with_index{ |song|
     puts song
   }
 end
