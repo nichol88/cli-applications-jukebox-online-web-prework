@@ -31,7 +31,7 @@ def play(songs_array)
   response = gets.strip
 
   songs_array.each_with_index{ |song,index|
-    if index == response || response == song
+    if index + 1 == response || response == song
       puts song
       song
     else
