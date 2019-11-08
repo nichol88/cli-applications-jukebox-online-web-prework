@@ -19,3 +19,9 @@ def help
   puts "- play : lets you choose a song to play"
   puts "- exit : exits this program"
 end
+
+def list(songs_array)
+  songs_array.each{ |song|
+    puts song
+  }
+end
