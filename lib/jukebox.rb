@@ -34,8 +34,6 @@ def play(songs_array)
 
   songs_array.each_with_index{ |song,index|
     binding.pry
-
-    puts "Comparing User response: #{response} to #{song}"
     if (index + 1).to_s == response.to_s || response == song
       puts song
       return song
