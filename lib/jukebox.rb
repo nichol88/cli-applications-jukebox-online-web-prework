@@ -31,10 +31,11 @@ def play(songs_array)
   puts "Please enter a song name or number:"
 
   response = gets.strip
-  puts "User response: #{response}"
+
   songs_array.each_with_index{ |song,index|
     binding.pry
 
+    puts "Comparing User response: #{response} to #{song}"
     if (index + 1).to_s == response.to_s || response == song
       puts song
       return song
