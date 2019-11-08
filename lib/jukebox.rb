@@ -35,7 +35,7 @@ def play(songs_array)
       puts song
       song
     else
-      "Invalid input, please try again"
+      puts "Invalid input, please try again"
     end
   }
 end
@@ -47,5 +47,7 @@ end
 def run
   puts "Please enter a command:"
   response = gets.strip
+
+
 
 end
