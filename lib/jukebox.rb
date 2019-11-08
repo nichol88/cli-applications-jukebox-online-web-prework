@@ -28,4 +28,10 @@ end
 
 def play(songs_array)
   puts "Please enter a song name or number:"
+  response = gets.strip
+
+  songs_array.each_with_index{ |song,index|
+    if index == response
+      puts "Playing #{song}"
+  }
 end
