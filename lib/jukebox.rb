@@ -32,7 +32,7 @@ def play(songs_array)
 
   songs_array.each_with_index{ |song,index|
     if index == response || response == song
-      puts "Playing #{song}"
+      puts song
       song
     else
       "Invalid input, please try again"
