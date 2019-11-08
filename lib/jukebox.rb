@@ -37,7 +37,7 @@ def play(songs_array)
 
     if (index + 1).to_s == response.to_s || response.to_s == song
       puts song
-      song
+      return song
     else
       puts "Invalid input, please try again"
     end
