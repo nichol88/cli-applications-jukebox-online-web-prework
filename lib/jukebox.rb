@@ -28,18 +28,21 @@ end
 
 def play(songs_array)
   puts "Please enter a song name or number:"
+
   response = gets.strip
   puts "User response: #{response}"
+
   songs_array.each_with_index{ |song,index|
     if (index + 1).to_s == response.to_s || response.to_s == song
       puts song
       song
     else
       puts "Invalid input, please try again"
-
     end
   }
 end
+
+
 
 def exit_jukebox
   puts "Goodbye"
