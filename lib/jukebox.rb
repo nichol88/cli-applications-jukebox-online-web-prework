@@ -25,3 +25,7 @@ def list(songs_array)
     puts "#{index + 1}. #{song}"
   }
 end
+
+def play(songs_array)
+  puts "Please enter a song name or number:"
+end
