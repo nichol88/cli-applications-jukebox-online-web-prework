@@ -31,9 +31,10 @@ def play(songs_array)
   response = gets.strip
 
   songs_array.each_with_index{ |song,index|
-    if index == response
+    if index == response || response == song
       puts "Playing #{song}"
     else
       "Invalid input, please try again"
+    end
   }
 end
