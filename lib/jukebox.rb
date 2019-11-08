@@ -34,6 +34,8 @@ def play(songs_array)
     if (index + 1).to_s == response.to_s || response == song
       puts song
       song
+    elsif response > songs_array.length
+      puts "Don't have that many songs!"      
     else
       "Invalid input, please try again"
     end
